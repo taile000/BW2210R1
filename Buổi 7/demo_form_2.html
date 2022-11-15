@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet ID Registration Form</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Genel Information</legend>
+            Name: <input type="text" name="petName"><br><br>
+            Date of birth: <input type="date" name="petDateOfBirth"><br><br>
+            Weight: <input type="number" name="petWeight" min="0"><br><br>
+            Owner Email: <input type="email" name="petOwerEmail">
+        </fieldset>
+        <fieldset>
+            <legend>Detail Information</legend>
+            Fur Color: <input type="radio" name="petFurColor" value="White"> White
+            <input type="radio" name="petFurColor" value="Black"> Black
+            <input type="radio" name="petFurColor" value="Grey"> Grey <br>
+            Favorite things:  
+            <input type="checkbox" name="petFavoriteThings" value="milk"> Milk
+            <input type="checkbox" name="petFavoriteThings" value="Playing"> Playing
+            <input type="checkbox" name="petFavoriteThings" value="Walking"> Walking<br>
+            Species:
+            <select name="petSpecies">
+                <option value="Meo Anh">Mèo Anh</option>
+                <option value="Meo Ta">Mèo Ta</option>
+                <option value="Meo Bao">Mèo Báo</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            Pet Photo:
+            <input type="file" name="petPhoto"><br><br>
+            Note: <textarea name="petNote"cols="30" rows="3"></textarea>
+        </fieldset>
+    </form>
+    <h2>Registered  Pets</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Pet Name</th>
+            <th>Registration Date</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Lucky</td>
+            <td><input type="date" name="Date"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Misthy</td>
+            <td><input type="date" name="Date"></td>
+        </tr>
+        <tr></tr>
+    </table>
+</body>
+</html>
